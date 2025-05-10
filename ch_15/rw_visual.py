@@ -15,11 +15,14 @@ while True:
     fig, ax = plt.subplots()
     point_numbers = range(rw.num_points)
     ax.plot(rw.x_values, rw.y_values, linewidth = 2 )
+    #point_numbers = range(rw.num_points)
+    #print(point_numbers)
+    ax.plot(rw.x_values, rw.y_values, linewidth=3) #! удалил лишние параметры
     ax.set_aspect("equal")
 
     #emphasize the first and the last points.
-    ax.scatter(0,0, c= "green",edgecolors="none",s=100)
-    ax.scatter(rw.x_values[-1], rw.y_values[-1], c="red", edgecolors="none",s=100)
+    ax.scatter(0, 0, c='green', edgecolors='none', s=100) #! оставил как есть
+    ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100) #! оставил как есть
 
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)

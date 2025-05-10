@@ -4,7 +4,7 @@ from random_walk import RandomWalk
 
 
 while True:
-    rw = RandomWalk(5_000)
+    rw = RandomWalk(5000)
     rw.fill_walk()
     plt.style.use("classic")
     fig, ax = plt.subplots()
